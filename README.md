@@ -24,7 +24,7 @@ Open http://127.0.0.1:8001/. Stop your server with Ctrl+C. No package installati
 - index.html, about.html, projects.html, planner.html, contact.html: five standalone pages.
 - css/styles.css: base components and functionality styles.
 - css/tech-theme.css: inherited responsive layout rules.
-- css/mature-theme.css: current restrained light palette, readable typography, and minimal surfaces.
+- css/blue-theme.css: current soft light-blue palette with the original tech-style composition and restrained decoration.
 - js/main.js: mobile menu, project links, and portrait reveals.
 - js/planner.js: task arrays, rendering, event handlers, persistence, and storage recovery.
 - js/contact.js: validation, Formspree delivery, and accessible sending/error feedback.

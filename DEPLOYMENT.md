@@ -41,3 +41,8 @@ Both former concepts are implemented in projects.html using js/security-tools.js
 
 Applied css/mature-theme.css after inherited styles across all five pages. Warm off-white, navy-grey text, muted green accents, simple borders, and no glow/grid decoration. Sharing card and favicon match. Structural/contrast checks plus all three functional test scripts passed. Existing Formspree routing and all interactive scripts are unchanged.
 
+
+## Soft blue theme
+
+Restored the original tech-style homepage composition and typography with a pale blue palette. Static personal branding panel retained; glowing effects and animated grid disabled. Functional scripts and assessment features unchanged. Contrast and tablet/phone overflow checks passed.
+
