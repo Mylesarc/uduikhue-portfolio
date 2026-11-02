@@ -46,3 +46,8 @@ Applied css/mature-theme.css after inherited styles across all five pages. Warm 
 
 Restored the original tech-style homepage composition and typography with a pale blue palette. Static personal branding panel retained; glowing effects and animated grid disabled. Functional scripts and assessment features unchanged. Contrast and tablet/phone overflow checks passed.
 
+
+## Deeper blue and section motion
+
+Deepened the main surface to #d8e7f5 and added four entrance variants through js/section-motion.js. Scroll reveals run once; focus and direct-link targets are revealed, and reduced motion disables movement. Browser checks confirmed all four variants and visible scroll/anchor content. Contrast audit passed. Existing feature logic is unchanged.
+

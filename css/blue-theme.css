@@ -146,3 +146,37 @@ h1,h2,h3,h4 { font-family: var(--heading); }
 .portrait-photo,.hero-portrait { border-radius: 10px; }
 .tech-hero::before,.portrait-hero-wrap::before,.callout::after,.home-bento .card:first-child::after { display: none; }
 .button:hover,.portrait-photo:hover img { transform: none; box-shadow: none; }
+/* Deeper blue surfaces with restrained, varied motion. */
+:root { --paper: #d8e7f5; --white: #f4f8fd; --surface: #c5daed; }
+body,.site-header { background: #d8e7f5; }
+.panel,.card,.project-grid .card,.security-tool { background: #eef5fc; }
+.home-bento .card:first-child,.callout { background: #c5daed; }
+.identity-terminal { background: #e6f0fa; }
+.portrait-photo,.hero-portrait { background: #eef5fc; }
+.note,.skills-panel .note,.skill-list li,.tag { background: #dceaf7; }
+.message-example { background: #e1edf8; }
+.section-motion { transition: opacity .65s ease, transform .65s cubic-bezier(.2,.7,.3,1); }
+.section-motion.motion-pending { opacity: 0; transform: translateY(22px); }
+.section-motion.motion-pending[data-motion='left'] { transform: translateX(-20px); }
+.section-motion.motion-pending[data-motion='right'] { transform: translateX(20px); }
+.section-motion.motion-pending[data-motion='scale'] { transform: scale(.975); }
+.tech-hero .hero-copy { animation: intro-rise .7s ease both; }
+.tech-hero .hero-visual { animation: intro-rise .85s .1s ease both; }
+@keyframes intro-rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+.motion-enter { animation: intro-rise .65s ease both; }
+.motion-enter[data-motion='left'] { animation-name: intro-left; }
+.motion-enter[data-motion='right'] { animation-name: intro-right; }
+.motion-enter[data-motion='scale'] { animation-name: intro-scale; }
+@keyframes intro-left { from { opacity: 0; transform: translateX(-18px); } to { opacity: 1; transform: none; } }
+@keyframes intro-right { from { opacity: 0; transform: translateX(18px); } to { opacity: 1; transform: none; } }
+@keyframes intro-scale { from { opacity: 0; transform: scale(.975); } to { opacity: 1; transform: none; } }
+@media(hover:hover) and (pointer:fine) {
+  .card,.button { transition: transform .25s ease, background-color .2s ease; }
+  .card:hover { transform: translateY(-3px); }
+  .button:hover { transform: translateY(-2px); }
+}
+@media(prefers-reduced-motion:reduce) {
+  .section-motion,.section-motion.motion-pending { opacity: 1!important; transform: none!important; transition: none!important; }
+  .tech-hero .hero-copy,.tech-hero .hero-visual,.motion-enter { animation: none; }
+  .card:hover,.button:hover { transform: none; }
+}
