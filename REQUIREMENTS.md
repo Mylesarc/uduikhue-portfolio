@@ -45,8 +45,8 @@ Status meanings: Implemented = present and checked; Pending content = requires s
 | Dynamic content updates | Task rows/counts and form feedback | Implemented |
 | Arrays and functions | tasks array; load/save/render; validationMessage | Implemented |
 | Interactive task management | Add/toggle/delete, keyboard controls | Implemented |
-| Hosted website URL | No public deployment yet | **Pending publication** |
-| GitHub repository URL | No remote repository verified yet | **Pending publication** |
+| Hosted website URL | https://mylesarc.github.io/uduikhue-portfolio/ | Published and verified |
+| GitHub repository URL | https://github.com/Mylesarc/uduikhue-portfolio | Public repository verified |
 
 ## Small enhancements beyond the assignment
 
@@ -55,3 +55,7 @@ localStorage persistence and recovery; uncomplete tasks; safe text insertion; ac
 ## Submission decision
 
 The local implementation is ready for content review and publication preparation. Do not call the assignment fully submission-ready until the photograph and skills are resolved and both required public URLs are verified. The sample project content must remain honestly labelled or be replaced with real work.
+
+## Publication update - 2 November 2026
+
+Both required public URLs above are now published and verified. This supersedes earlier publication-pending notes. Student review of suggested skills and sample project content remains recommended. Portraits supplied by the student are integrated.
