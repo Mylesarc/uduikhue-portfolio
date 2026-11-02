@@ -3,13 +3,26 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The academic portfolio of Uduikhue Osamudiamen Joshua, a first-year cybersecurity student at Miva Open University.">
+    <meta name="description" content="Explore Joshua’s working study planner and future cybersecurity project concepts.">
     <title>
       Projects | Joshua Uduikhue
     </title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://mylesarc.github.io/uduikhue-portfolio/projects.html">
+    <meta name="theme-color" content="#070B14">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Uduikhue Osamudiamen">
+    <meta property="og:title" content="Projects | Joshua Uduikhue">
+    <meta property="og:description" content="Explore Joshua’s working study planner and future cybersecurity project concepts.">
+    <meta property="og:url" content="https://mylesarc.github.io/uduikhue-portfolio/projects.html">
+    <meta property="og:image" content="https://mylesarc.github.io/uduikhue-portfolio/assets/images/social-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Uduikhue Osamudiamen — Cybersecurity, Networking and Development">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/tech-theme.css">
-    <script src="js/main.js" defer>
+    <link rel="stylesheet" href="css/tech-theme.css?v=20261102b">
+    <script src="js/main.js?v=20261102b" defer>
     </script>
   </head>
   <body class="page-projects">
@@ -66,18 +79,49 @@
           </em>
         </h1>
         <p class="lead">
-          A collection of sample project concepts connecting web development, security awareness, and academic life.
+          A working study tool and future project ideas connecting web development, security awareness, and academic life.
         </p>
       </section>
       <p class="note">
-        All three entries are illustrative concepts, not completed achievements. Their images are illustrative covers, not screenshots or evidence of completed work.
+        The study planner is a working demonstration. The password explorer and phishing guide are future project concepts. Cover images are illustrative.
       </p>
-      <section class="cards project-grid" aria-label="Sample project concepts">
+      <section class="cards project-grid" aria-label="Projects and concepts">
+        <article class="card">
+          <img src="assets/images/focused-study-ai.webp" alt="Notebook and laptop scene illustrating academic planning." width="1200" height="800" loading="lazy" decoding="async">
+          <div class="card-body">
+            <span class="tag">
+              Working project / 01
+            </span>
+            <h2>
+              Personal study planner
+            </h2>
+            <p>
+              A working task manager for organising coursework: add tasks, mark them complete, delete them, and keep your list saved in this browser.
+            </p>
+            <p>
+              <small>
+                JavaScript / DOM / localStorage
+              </small>
+            </p>
+            <a class="text-link" href="planner.html">
+              Open study planner
+              &rarr;
+            </a>
+            <details class="project-details" id="concept-03">
+              <summary>
+                How it works
+              </summary>
+              <p>
+                Built with plain JavaScript, an array of task objects, DOM updates, and localStorage. Tasks stay on this browser and device. Includes keyboard controls and graceful handling of unavailable storage.
+              </p>
+            </details>
+          </div>
+        </article>
         <article class="card">
           <img src="assets/images/cybersecurity-workspace-ai.webp" alt="Laptop and padlock scene illustrating password security." width="1200" height="800" loading="lazy" decoding="async">
           <div class="card-body">
             <span class="tag">
-              Sample concept 01
+              Future concept / 02
             </span>
             <h2>
               Password strength explorer
@@ -108,7 +152,7 @@
           <img src="assets/images/network-connections-ai.webp" alt="Network cables illustrating digital connections and security awareness." width="1200" height="800" loading="lazy" decoding="async">
           <div class="card-body">
             <span class="tag">
-              Sample concept 02
+              Future concept / 03
             </span>
             <h2>
               Phishing awareness guide
@@ -137,37 +181,6 @@
             </details>
           </div>
         </article>
-        <article class="card">
-          <img src="assets/images/focused-study-ai.webp" alt="Notebook and laptop scene illustrating academic planning." width="1200" height="800" loading="lazy" decoding="async">
-          <div class="card-body">
-            <span class="tag">
-              Sample concept 03
-            </span>
-            <h2>
-              Personal study planner
-            </h2>
-            <p>
-              A proposed task manager for organising coursework and building consistent study habits.
-            </p>
-            <p>
-              <small>
-                DOM manipulation / Productivity
-              </small>
-            </p>
-            <a class="text-link" href="#concept-03">
-              View concept brief
-              &rarr;
-            </a>
-            <details class="project-details" id="concept-03">
-              <summary>
-                Explore project concept
-              </summary>
-              <p>
-                Use an array of task objects, event handlers, and localStorage. The academic planner on this site demonstrates these ideas.
-              </p>
-            </details>
-          </div>
-        </article>
       </section>
       <aside class="callout bottom-space">
         <div>
@@ -175,7 +188,7 @@
             Every project starts with a question.
           </h2>
           <p>
-            These concepts can grow into practical demonstrations as my learning progresses.
+            Try the planner today, or explore the ideas I would like to build as my learning progresses.
           </p>
         </div>
         <a class="button" href="contact.html">
@@ -194,6 +207,7 @@
         <span>
           Miva Open University
         </span>
+        <a href="https://github.com/Mylesarc/uduikhue-portfolio" aria-label="View portfolio source on GitHub">GitHub &nearr;</a>
         <a href="contact.html">
           Let's connect
           &nearr;

@@ -59,3 +59,7 @@ The local implementation is ready for content review and publication preparation
 ## Publication update - 2 November 2026
 
 Both required public URLs above are now published and verified. This supersedes earlier publication-pending notes. Student review of suggested skills and sample project content remains recommended. Portraits supplied by the student are integrated.
+
+## Final content and usability update
+
+The owner confirmed cybersecurity, ethical hacking, and database management as skill areas, alongside the existing foundations. No proficiency ratings are invented. The existing planner is featured as a working project, with two future concepts retained. The owner chose to retain the original chime with finished copy. GitHub links, favicon, page-specific sharing metadata, 16px inputs, and form-first mobile contact order are implemented. All five pages passed 1280px, 820px, and 360px overflow checks.

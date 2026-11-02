@@ -26,3 +26,8 @@ The final documentation commit records the verified links and this handoff; page
 
 The original local-only contact behavior above is superseded by the Formspree integration at https://formspree.io/f/xbggplwb. The form now submits validated fields with sending feedback, duplicate prevention, and retained text on failure. Real inbox receipt must be confirmed by the owner. No private credentials are included.
 
+
+## Portfolio polish
+
+Finalised skills wording and audio copy, featured the implemented planner, increased reading and input text, moved the contact form first on small screens, added GitHub footer links, SVG favicon, and a 1200x630 PNG sharing card. Desktop/tablet/mobile layout and local validation checks passed. The Formspree endpoint and sending logic remain unchanged.
+

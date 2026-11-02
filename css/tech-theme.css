@@ -241,3 +241,31 @@ td { color: #b4c5d9; font-size: 12px; }
   .button:hover { transform: none; }
   .portrait-photo:hover img { transform: none; }
 }
+/* Readability and contact flow refinements. Source order puts the form first. */
+.contact-details { grid-column: 1; grid-row: 1; }
+.contact-message { grid-column: 2; grid-row: 1; }
+.footer-inner { flex-wrap: wrap; gap: 18px; }
+.footer-inner a { font-size: 13px; padding-block: 8px; }
+.panel p,.card p,.plain-list,.callout p { font-size: 15px; }
+.note,.skills-panel .note,.project-details summary { font-size: 13px; }
+.field label { font-size: 14px; }
+.field input,.field textarea { font-size: 16px; }
+.field small,.field-error { font-size: 13px; }
+.phase-label,.tag,.skill-list li { font-size: 11px; }
+.text-link,.button { font-size: 14px; }
+.contact-item small,.step-list li,.task-summary { font-size: 13px; }
+.project-grid .card:first-child img { aspect-ratio: 16/10; }
+@media(max-width:900px) {
+  .contact-message,.contact-details { grid-column: auto; grid-row: auto; }
+}
+@media(max-width:700px) {
+  .contact-message,.contact-details { grid-column: auto; grid-row: auto; }
+  .hero-description { font-size: 15px; }
+  .hero-portrait figcaption,.portrait-photo figcaption { font-size: 12px; }
+  .meta-strip small { font-size: 10px; }
+  .meta-strip strong { font-size: 13px; }
+  .project-grid .card:not(:first-child) h2 { font-size: 23px; }
+  .footer-inner { font-size: 12px; }
+  th { font-size: 10px; }
+  td { font-size: 13px; }
+}
