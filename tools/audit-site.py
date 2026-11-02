@@ -56,7 +56,7 @@ def luminance(hexcode):
 def contrast(a,b):
     a,b=sorted([luminance(a),luminance(b)]);return (b+.05)/(a+.05)
 ratios={}
-for label,fg,bg,minimum in [('body','f8fafc','070b14',4.5),('muted','94a3b8','070b14',4.5),('accent','38bdf8','070b14',4.5),('errors','ffb6ab','0d1422',4.5),('field borders','52657e','080f1b',3)]:
+for label,fg,bg,minimum in [('body','24323e','f5f4f0',4.5),('muted','52616b','f5f4f0',4.5),('accent','315c57','f5f4f0',4.5),('errors','9c3028','ffffff',4.5),('field borders','788c80','ffffff',3)]:
     ratio=contrast(fg,bg);ratios[label]=round(ratio,2)
     if ratio<minimum: errors.append(label+': Contrast below target')
 assert len(pages)==5

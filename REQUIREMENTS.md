@@ -67,3 +67,7 @@ The owner confirmed cybersecurity, ethical hacking, and database management as s
 ## Interactive security projects
 
 The two former future concepts are now working tools within projects.html. The password explorer runs locally with length and pattern checks, show/hide and clear controls. The phishing guide includes four fictional scenarios, immediate explanations, score and restart. No extra HTML pages or dependencies were introduced.
+
+## Mature visual theme
+
+The quieter light theme retains all five pages, biography, education table, skills and interests, three working projects, audio, forms and validation, task add/complete/delete with persistence, semantic HTML, Grid/Flex layouts, external stylesheets, responsive navigation, and restrained colour transitions. Decorative terminal and animated grid were removed. Functional JavaScript is unchanged. Contrast checks passed and all pages fit 1280px, 820px and 360px widths.

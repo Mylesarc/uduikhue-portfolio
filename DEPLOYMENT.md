@@ -36,3 +36,8 @@ Finalised skills wording and audio copy, featured the implemented planner, incre
 
 Both former concepts are implemented in projects.html using js/security-tools.js and css/security-tools.css. Unit checks cover sample patterns and Unicode length; browser checks cover visibility/clear, all four quiz answers, final score, restart and incorrect feedback, plus 360px overflow. Neither tool makes network or storage calls. Learning references are NIST SP 800-63B and CISA phishing guidance.
 
+
+## Mature theme update
+
+Applied css/mature-theme.css after inherited styles across all five pages. Warm off-white, navy-grey text, muted green accents, simple borders, and no glow/grid decoration. Sharing card and favicon match. Structural/contrast checks plus all three functional test scripts passed. Existing Formspree routing and all interactive scripts are unchanged.
+
