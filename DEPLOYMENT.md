@@ -31,3 +31,8 @@ The original local-only contact behavior above is superseded by the Formspree in
 
 Finalised skills wording and audio copy, featured the implemented planner, increased reading and input text, moved the contact form first on small screens, added GitHub footer links, SVG favicon, and a 1200x630 PNG sharing card. Desktop/tablet/mobile layout and local validation checks passed. The Formspree endpoint and sending logic remain unchanged.
 
+
+## Security learning tools
+
+Both former concepts are implemented in projects.html using js/security-tools.js and css/security-tools.css. Unit checks cover sample patterns and Unicode length; browser checks cover visibility/clear, all four quiz answers, final score, restart and incorrect feedback, plus 360px overflow. Neither tool makes network or storage calls. Learning references are NIST SP 800-63B and CISA phishing guidance.
+

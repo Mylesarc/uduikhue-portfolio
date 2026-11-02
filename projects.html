@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Explore Joshua’s working study planner and future cybersecurity project concepts.">
+    <meta name="description" content="Try Joshua’s study planner, local password explorer, and phishing awareness quiz.">
     <title>
       Projects | Joshua Uduikhue
     </title>
@@ -13,7 +13,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Uduikhue Osamudiamen">
     <meta property="og:title" content="Projects | Joshua Uduikhue">
-    <meta property="og:description" content="Explore Joshua’s working study planner and future cybersecurity project concepts.">
+    <meta property="og:description" content="Try Joshua’s study planner, local password explorer, and phishing awareness quiz.">
     <meta property="og:url" content="https://mylesarc.github.io/uduikhue-portfolio/projects.html">
     <meta property="og:image" content="https://mylesarc.github.io/uduikhue-portfolio/assets/images/social-preview.png">
     <meta property="og:image:width" content="1200">
@@ -22,6 +22,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/tech-theme.css?v=20261102b">
+    <link rel="stylesheet" href="css/security-tools.css?v=20261102">
+    <script src="js/security-tools.js?v=20261102" defer></script>
     <script src="js/main.js?v=20261102b" defer>
     </script>
   </head>
@@ -79,13 +81,13 @@
           </em>
         </h1>
         <p class="lead">
-          A working study tool and future project ideas connecting web development, security awareness, and academic life.
+          Three interactive projects connecting web development, security awareness, and academic life.
         </p>
       </section>
       <p class="note">
-        The study planner is a working demonstration. The password explorer and phishing guide are future project concepts. Cover images are illustrative.
+        Try all three working demonstrations below. The security tools are educational exercises; cover images are illustrative.
       </p>
-      <section class="cards project-grid" aria-label="Projects and concepts">
+      <section class="cards project-grid" aria-label="Working projects">
         <article class="card">
           <img src="assets/images/focused-study-ai.webp" alt="Notebook and laptop scene illustrating academic planning." width="1200" height="800" loading="lazy" decoding="async">
           <div class="card-body">
@@ -121,29 +123,29 @@
           <img src="assets/images/cybersecurity-workspace-ai.webp" alt="Laptop and padlock scene illustrating password security." width="1200" height="800" loading="lazy" decoding="async">
           <div class="card-body">
             <span class="tag">
-              Future concept / 02
+              Working project / 02
             </span>
             <h2>
               Password strength explorer
             </h2>
             <p>
-              A proposed browser-based tool that explains how password length and variety affect strength.
+              Explore how length and predictable patterns affect sample passwords, with checks that run only in your browser.
             </p>
             <p>
               <small>
                 JavaScript / Security awareness
               </small>
             </p>
-            <a class="text-link" href="#concept-01">
-              View concept brief
+            <a class="text-link" href="#password-lab">
+              Try the interactive tool
               &rarr;
             </a>
             <details class="project-details" id="concept-01">
               <summary>
-                Explore project concept
+                About this demonstration
               </summary>
               <p>
-                Build a local-only demonstration using sample passwords. Explain the limits of strength estimates and never store or transmit entered passwords.
+                Checks sample length, common examples, repetition, and simple sequences. No password data is stored or sent; this is not a breach check or a guarantee of security.
               </p>
             </details>
           </div>
@@ -152,13 +154,13 @@
           <img src="assets/images/network-connections-ai.webp" alt="Network cables illustrating digital connections and security awareness." width="1200" height="800" loading="lazy" decoding="async">
           <div class="card-body">
             <span class="tag">
-              Future concept / 03
+              Working project / 03
             </span>
             <h2>
               Phishing awareness guide
             </h2>
             <p>
-              A proposed interactive guide to recognising suspicious messages and checking links carefully.
+              Practise spotting suspicious requests in four fictional messages and learn when to report or verify independently.
             </p>
             <p>
               <small>
@@ -167,19 +169,55 @@
                 CSS / Digital safety
               </small>
             </p>
-            <a class="text-link" href="#concept-02">
-              View concept brief
+            <a class="text-link" href="#phishing-lab">
+              Try the interactive tool
               &rarr;
             </a>
             <details class="project-details" id="concept-02">
               <summary>
-                Explore project concept
+                About this demonstration
               </summary>
               <p>
-                Create fictional message examples and explain warning signs such as unusual senders, urgency, and misleading links. Use harmless sample domains.
+                Four fictional scenarios provide explanations and a score. Example addresses are inert text using reserved .example domains. No real messages or links are scanned.
               </p>
             </details>
           </div>
+        </article>
+      </section>
+      <section class="security-labs" aria-labelledby="labs-heading">
+        <p class="eyebrow">Interactive / Security learning lab</p>
+        <h2 id="labs-heading">Learn by trying.</h2>
+        <p class="lead">Small, focused exercises in safer digital habits. Everything in these two tools runs in your browser.</p>
+        <noscript><p class="note">Enable JavaScript to use the interactive exercises. The explanations and reference links remain available.</p></noscript>
+        <article class="security-tool" id="password-lab" aria-labelledby="password-heading">
+          <span class="tag">02 / Local password explorer</span>
+          <h3 id="password-heading">Length matters. Patterns matter too.</h3>
+          <p id="password-help">Use a made-up sample, never a real account password. This tool does not store or send your entry. It uses a small set of heuristics, not a breach database or a cracking-time estimate.</p>
+          <form id="password-form" autocomplete="off">
+            <div class="field"><label for="password-example">Sample password or passphrase</label>
+              <input id="password-example" type="password" maxlength="256" autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="password-help"></div>
+            <div class="tool-actions"><button class="button secondary" id="password-toggle" type="button" aria-pressed="false" aria-controls="password-example">Show sample</button><button class="button secondary" id="password-clear" type="button">Clear sample</button></div>
+          </form>
+          <label for="password-meter">Illustrative assessment</label>
+          <meter id="password-meter" min="0" max="4" value="0">0 out of 4</meter>
+          <p id="password-result" class="lab-status" role="status" aria-live="polite">Enter a sample to begin.</p>
+          <ul id="password-tips"></ul>
+          <p class="lab-source"><small>Learning reference: <a href="https://pages.nist.gov/800-63-4/sp800-63b.html">NIST password guidance</a>. Length and uniqueness matter; adding a symbol alone does not make a predictable password safe.</small></p>
+        </article>
+        <article class="security-tool" id="phishing-lab" aria-labelledby="phishing-heading">
+          <span class="tag">03 / Phishing awareness</span>
+          <h3 id="phishing-heading">Pause. Inspect. Choose your next step.</h3>
+          <p>All messages are fictional. Addresses and URLs below are non-clickable examples. Choose the best next action; appearance alone cannot prove a message is safe.</p>
+          <p id="quiz-progress" class="lab-status" role="status">Scenario 1 of 4</p>
+          <div class="message-example"><small>Fictional training message</small><p id="quiz-from"></p><h4 id="quiz-subject" tabindex="-1">Message scenario</h4><p id="quiz-body"></p></div>
+          <div class="tool-actions" role="group" aria-label="Choose the safest next action">
+            <button class="button secondary" type="button" data-quiz-answer="report">Report; do not interact</button>
+            <button class="button secondary" type="button" data-quiz-answer="verify">Verify independently first</button>
+            <button class="button secondary" type="button" data-quiz-answer="follow">Follow the message’s instructions</button>
+          </div>
+          <p id="quiz-feedback" class="lab-status" role="status" aria-live="polite" tabindex="-1"></p>
+          <div class="tool-actions"><button class="button" id="quiz-next" type="button" hidden>Next scenario →</button><button class="button secondary" id="quiz-restart" type="button">Restart exercise</button></div>
+          <p class="lab-source"><small>Learning reference: <a href="https://www.cisa.gov/secure-our-world/recognize-and-report-phishing">CISA: Recognize and report phishing</a>. Report real suspicious messages through your organisation’s trusted process.</small></p>
         </article>
       </section>
       <aside class="callout bottom-space">
@@ -188,7 +226,7 @@
             Every project starts with a question.
           </h2>
           <p>
-            Try the planner today, or explore the ideas I would like to build as my learning progresses.
+            Explore the tools, practise a safer habit, and share what you learn.
           </p>
         </div>
         <a class="button" href="contact.html">

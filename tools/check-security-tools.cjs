@@ -1,0 +1,16 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const {assessPassword, scenarios} = require('../js/security-tools.js');
+assert.equal(assessPassword('').score,0);
+for(const sample of ['Password123!','12345678901234567890','aaaaaaaaaaaaaaaaaaaaaaaa','abcabcabcabcabcabcabc']) assert.equal(assessPassword(sample).score,1);
+assert.equal(assessPassword('🐱🐱').length,2);
+assert.equal(assessPassword('short').score,1);
+assert.equal(assessPassword('longer example').score,2);
+assert.equal(assessPassword('A long invented sample phrase').score,4);
+assert.match(assessPassword('A long invented sample phrase').tips.join(' '),/does not prove/);
+assert.equal(scenarios.length,4);
+assert.equal(scenarios.filter(s=>s.answer==='report').length,2);
+assert.equal(scenarios.filter(s=>s.answer==='verify').length,2);
+const source=fs.readFileSync('js/security-tools.js','utf8');
+assert.doesNotMatch(source,/fetch\(|XMLHttpRequest|sendBeacon|localStorage|sessionStorage|console\./);
+console.log('PASS: empty, weak/common/repeated/sequential samples, Unicode length, long phrases, limitations, scenario answer balance, and no network/storage calls.');

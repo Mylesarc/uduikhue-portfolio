@@ -63,3 +63,7 @@ Both required public URLs above are now published and verified. This supersedes 
 ## Final content and usability update
 
 The owner confirmed cybersecurity, ethical hacking, and database management as skill areas, alongside the existing foundations. No proficiency ratings are invented. The existing planner is featured as a working project, with two future concepts retained. The owner chose to retain the original chime with finished copy. GitHub links, favicon, page-specific sharing metadata, 16px inputs, and form-first mobile contact order are implemented. All five pages passed 1280px, 820px, and 360px overflow checks.
+
+## Interactive security projects
+
+The two former future concepts are now working tools within projects.html. The password explorer runs locally with length and pattern checks, show/hide and clear controls. The phishing guide includes four fictional scenarios, immediate explanations, score and restart. No extra HTML pages or dependencies were introduced.
