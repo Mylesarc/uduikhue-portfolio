@@ -6,6 +6,7 @@ class Element {
   constructor() { this.children=[]; this.events={}; this.attributes={}; this.value=''; this.textContent=''; this.classList={toggle(){}}; }
   addEventListener(name, callback) { this.events[name]=callback; }
   setAttribute(name, value) { this.attributes[name]=value; }
+  getAttribute(name) { return this.attributes[name] || null; }
   removeAttribute(name) { delete this.attributes[name]; }
   append(...children) { this.children.push(...children); }
   replaceChildren() { this.children=[]; }
@@ -37,7 +38,7 @@ for (const [id,value] of Object.entries({name:'  Test Student  ',email:'student@
 }
 vm.runInNewContext(fs.readFileSync('js/contact.js','utf8'),{document:{querySelector:contactGet,getElementById:id=>contactGet('#'+id)}});
 const submit=()=>contactGet('#contact-form').events.submit({preventDefault(){}});
-submit(); assert.equal(contactGet('#phone').value,'09064351861'); assert.equal(contactGet('#name').value,'Test Student'); assert.match(contactGet('#contact-status').textContent,/no message has been sent/);
+submit(); assert.equal(contactGet('#phone').value,'09064351861'); assert.equal(contactGet('#name').value,'Test Student'); assert.match(contactGet('#contact-status').textContent,/no message has been sent/i);
 for (const value of ['+234123','123-456','12abc','123 456']) { contactGet('#phone').value=value;submit();assert.match(contactGet('#phone-error').textContent,/digits only/); }
 contactGet('#phone').value='000123'; submit(); assert.equal(contactGet('#phone-error').textContent,''); assert.equal(contactGet('#phone').value,'000123');
-console.log('PASS: leading phone zeros, trimmed values, local-only success, and rejection of non-digit phone formats.');
+console.log('PASS: leading phone zeros, trimmed values, unconfigured delivery feedback, and rejection of non-digit phone formats.');

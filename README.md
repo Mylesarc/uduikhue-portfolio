@@ -26,7 +26,7 @@ Open http://127.0.0.1:8001/. Stop your server with Ctrl+C. No package installati
 - css/tech-theme.css: dark tokens, responsive layouts, typography, and subtle grid animation.
 - js/main.js: mobile menu, project links, and portrait reveals.
 - js/planner.js: task arrays, rendering, event handlers, persistence, and storage recovery.
-- js/contact.js: local validation and accessible feedback.
+- js/contact.js: validation, Formspree delivery, and accessible sending/error feedback.
 - assets/: portraits, concept imagery, audio, locally hosted fonts, and licences.
 - REQUIREMENTS.md, DEMONSTRATION.md, TECH-REDESIGN.md, DEPLOYMENT.md: checklist, demonstration guide, design notes, and deployment verification.
 
@@ -34,9 +34,9 @@ Open http://127.0.0.1:8001/. Stop your server with Ctrl+C. No package installati
 
 Tasks are saved in the current browser and origin under joshua-academic-tasks-v1. They do not sync across browsers/devices, and localhost tasks do not transfer to the hosted site. Clearing site data removes them. Storage errors produce visible feedback while tasks remain usable in memory.
 
-The contact form validates locally and does not send or save messages. Use the direct email link for actual contact. Phone numbers remain strings to preserve leading zeros.
+The contact form validates locally, then submits name, email, phone, and message to the configured Formspree endpoint over HTTPS. It prevents duplicate requests, retains text on failure, and confirms success only after service acceptance. Acceptance does not guarantee inbox receipt. Phone numbers remain strings to preserve leading zeros. The direct email link remains available.
 
-The three project entries are illustrative concepts, not completed achievements. Technical skills are labelled as suggested learning areas pending the student's confirmation. Review those details before assessment. Portrait and concept-asset provenance is documented under assets/; fonts include their licence texts. No remote fonts, CDN scripts, backend, accounts, database, or paid API are needed.
+The three project entries are illustrative concepts, not completed achievements. Technical skills are labelled as suggested learning areas pending the student's confirmation. Review those details before assessment. Portrait and concept-asset provenance is documented under assets/; fonts include their licence texts. No remote fonts, CDN scripts, or custom backend are needed. Contact delivery depends on the owner's verified Formspree form and its service limits.
 
 ## Checks
 
@@ -48,6 +48,7 @@ node --check js/main.js
 node --check js/planner.js
 node --check js/contact.js
 node tools/check-phase3.cjs
+node tools/check-contact.cjs
 ```
 
 Checks are dependency-free. Browser verification covered desktop, tablet, phone, keyboard navigation, planner persistence, and contact feedback. These checks are not a formal accessibility certification.

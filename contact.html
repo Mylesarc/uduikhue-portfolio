@@ -114,20 +114,20 @@
         </section>
         <section class="panel">
           <span class="phase-label">
-            Contact form / Local demonstration
+            Contact / Direct message
           </span>
           <h2>
             Leave a message
           </h2>
           <p class="note">
-            This form checks your details locally. It does not send messages. Use the email link to contact me directly.
+            Send a message and I'll get back to you by email.
           </p>
           <noscript>
             <p class="note">
-              Enable JavaScript to check this form. You can still contact me using the email link.
+              Enable JavaScript to send this form. You can still contact me using the email link.
             </p>
           </noscript>
-          <form class="contact-form" id="contact-form" novalidate>
+          <form class="contact-form" id="contact-form" data-endpoint="https://formspree.io/f/xbggplwb" novalidate>
             <div class="form-grid">
               <div class="field">
                 <label for="name">
@@ -174,13 +174,13 @@
               <p class="field-error" id="message-error" aria-live="polite"></p>
             </div>
             <button type="submit" class="button" disabled>
-              Check message
+              Send message
               &rarr;
             </button>
             <p id="contact-status" class="form-status" role="status" aria-live="polite" tabindex="-1"></p>
             <p>
               <small>
-                All four fields are required. Your message is not sent or saved by this form.
+                All four fields are required. Submissions are processed by Formspree to contact Joshua. Please do not include passwords or sensitive information.
               </small>
             </p>
           </form>

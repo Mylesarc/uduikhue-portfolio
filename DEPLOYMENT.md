@@ -21,3 +21,8 @@ The contact form is intentionally a local validation demonstration and sends no 
 Source is in the root Git repository, on main, with origin pointing to the public repository. Official GitHub CLI is authenticated through the operating-system keyring. No passwords or access tokens were added to the repository. Temporary binaries, deployment archives, and screenshots are excluded through .gitignore. Commit author uses the GitHub noreply address; global Git author/credential settings were not changed.
 
 The final documentation commit records the verified links and this handoff; page source and assets are unchanged from the tested deployment.
+
+## Contact delivery update
+
+The original local-only contact behavior above is superseded by the Formspree integration at https://formspree.io/f/xbggplwb. The form now submits validated fields with sending feedback, duplicate prevention, and retained text on failure. Real inbox receipt must be confirmed by the owner. No private credentials are included.
+
