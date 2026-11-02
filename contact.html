@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The academic portfolio of Uduikhue Osamudiamen Joshua, a first-year cybersecurity student at Miva Open University.">
+    <title>
+      Contact | Joshua Uduikhue
+    </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tech-theme.css">
+    <script src="js/main.js" defer>
+    </script>
+    <script src="js/contact.js" defer>
+    </script>
+  </head>
+  <body class="page-contact">
+    <a class="skip" href="#main">
+      Skip to content
+    </a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">
+            UO
+          </span>
+          <span>
+            <strong>
+              Uduikhue O.
+            </strong>
+            <small>
+              Student / Cybersecurity
+            </small>
+          </span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">
+          Menu
+        </button>
+        <nav id="navigation" aria-label="Main navigation">
+          <a href="index.html">
+            Home
+          </a>
+          <a href="about.html">
+            About
+          </a>
+          <a href="projects.html">
+            Projects
+          </a>
+          <a href="planner.html">
+            Planner
+          </a>
+          <a href="contact.html" aria-current="page">
+            Contact
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="wrap" tabindex="-1">
+      <section class="page-intro">
+        <p class="eyebrow">
+          05 / Open a conversation
+        </p>
+        <h1>
+          Good connections
+          <br>
+          <em>
+            start with hello.
+          </em>
+        </h1>
+        <p class="lead">
+          Have a question about my academic journey or an idea to share? Here is how to reach me.
+        </p>
+      </section>
+      <div class="contact-layout bottom-space">
+        <section>
+          <div class="accent-rule">
+          </div>
+          <h2>
+            Let's connect.
+          </h2>
+          <p>
+            I'm a first-year cybersecurity student with an interest in learning and networking.
+          </p>
+<figure class="portrait-photo portrait-reveal">
+  <img src="assets/images/portraits/urban-professional.webp" srcset="assets/images/portraits/urban-professional-320.webp 320w, assets/images/portraits/urban-professional.webp 627w" sizes="(max-width: 700px) 85vw, (max-width: 1000px) 35vw, 430px" alt="Portrait of Joshua in a dark jacket with headphones around his neck." width="627" height="627" loading="lazy" decoding="async">
+  <figcaption>Let's connect.</figcaption>
+</figure>
+          <div class="contact-item">
+            <small>
+              Email
+            </small>
+            <a href="mailto:o.uduikhue2038@miva.edu.ng">
+              o.uduikhue2038@miva.edu.ng
+            </a>
+          </div>
+          <div class="contact-item">
+            <small>
+              Phone
+            </small>
+            <a href="tel:+2349064351861">
+              +234 906 435 1861
+            </a>
+          </div>
+          <div class="contact-item">
+            <small>
+              Academic home
+            </small>
+            <span>
+              Miva Open University
+              <br>
+              BSc Cybersecurity / First year
+            </span>
+          </div>
+        </section>
+        <section class="panel">
+          <span class="phase-label">
+            Contact form / Local demonstration
+          </span>
+          <h2>
+            Leave a message
+          </h2>
+          <p class="note">
+            This form checks your details locally. It does not send messages. Use the email link to contact me directly.
+          </p>
+          <noscript>
+            <p class="note">
+              Enable JavaScript to check this form. You can still contact me using the email link.
+            </p>
+          </noscript>
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">
+                  Name
+                  <span aria-hidden="true">
+                    *
+                  </span>
+                </label>
+                <input id="name" name="name" aria-describedby="name-error" autocomplete="name" required maxlength="100">
+                <p class="field-error" id="name-error" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="email">
+                  Email address
+                  <span aria-hidden="true">
+                    *
+                  </span>
+                </label>
+                <input id="email" name="email" aria-describedby="email-error" type="email" autocomplete="email" required maxlength="254">
+                <p class="field-error" id="email-error" aria-live="polite"></p>
+              </div>
+            </div>
+            <div class="field">
+              <label for="phone">
+                Phone number
+                <span aria-hidden="true">
+                  *
+                </span>
+              </label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="numeric" pattern="[0-9]+" aria-describedby="phone-hint phone-error" required>
+              <small id="phone-hint">
+                Digits only, including your country code. Example: 2349064351861.
+              </small>
+              <p class="field-error" id="phone-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="message">
+                Message
+                <span aria-hidden="true">
+                  *
+                </span>
+              </label>
+              <textarea id="message" name="message" aria-describedby="message-error" required maxlength="3000"></textarea>
+              <p class="field-error" id="message-error" aria-live="polite"></p>
+            </div>
+            <button type="submit" class="button" disabled>
+              Check message
+              &rarr;
+            </button>
+            <p id="contact-status" class="form-status" role="status" aria-live="polite" tabindex="-1"></p>
+            <p>
+              <small>
+                All four fields are required. Your message is not sent or saved by this form.
+              </small>
+            </p>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>
+          Uduikhue Osamudiamen Joshua
+          &copy;
+          2026
+        </span>
+        <span>
+          Miva Open University
+        </span>
+        <a href="contact.html">
+          Let's connect
+          &nearr;
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

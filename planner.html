@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The academic portfolio of Uduikhue Osamudiamen Joshua, a first-year cybersecurity student at Miva Open University.">
+    <title>
+      Academic planner | Joshua Uduikhue
+    </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tech-theme.css">
+    <script src="js/main.js" defer>
+    </script>
+    <script src="js/planner.js" defer>
+    </script>
+  </head>
+  <body class="page-planner">
+    <a class="skip" href="#main">
+      Skip to content
+    </a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">
+            UO
+          </span>
+          <span>
+            <strong>
+              Uduikhue O.
+            </strong>
+            <small>
+              Student / Cybersecurity
+            </small>
+          </span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">
+          Menu
+        </button>
+        <nav id="navigation" aria-label="Main navigation">
+          <a href="index.html">
+            Home
+          </a>
+          <a href="about.html">
+            About
+          </a>
+          <a href="projects.html">
+            Projects
+          </a>
+          <a href="planner.html" aria-current="page">
+            Planner
+          </a>
+          <a href="contact.html">
+            Contact
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="wrap" tabindex="-1">
+      <section class="page-intro">
+        <p class="eyebrow">
+          04 / Learning workspace
+        </p>
+        <h1>
+          Your next step,
+          <br>
+          <em>
+            written down.
+          </em>
+        </h1>
+        <p class="lead">
+          A simple workspace for coursework and study tasks. Build momentum, one completed task at a time.
+        </p>
+      </section>
+      <div class="planner-layout bottom-space">
+        <section class="panel" aria-labelledby="task-heading">
+          <span class="phase-label">
+            Your personal study space
+          </span>
+          <h2 id="task-heading">
+            Academic tasks
+          </h2>
+          <p>
+            Add a task, check it off, and keep your study plans moving.
+          </p>
+          <noscript>
+            <p class="note">
+              Enable JavaScript to use the academic planner.
+            </p>
+          </noscript>
+          <form id="task-form" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="task-title">
+                  What do you need to work on?
+                </label>
+                <input id="task-title" name="task" placeholder="e.g. Review lecture notes" maxlength="200" required aria-describedby="task-error">
+              </div>
+              <button type="submit" class="button" disabled>
+                Add task +
+              </button>
+            </div>
+            <p class="field-error" id="task-error" aria-live="polite"></p>
+          </form>
+          <p class="task-summary" id="task-summary"></p>
+          <ul class="task-list" id="task-list" aria-label="Academic tasks"></ul>
+          <div class="empty-state" id="empty-state">
+            <div class="empty-symbol" aria-hidden="true">
+              &#10003;
+            </div>
+            <h3>
+              A clear page. A fresh start.
+            </h3>
+            <p>
+              Add your first task above to get started.
+            </p>
+          </div>
+          <p id="task-status" class="form-status" role="status" aria-live="polite"></p>
+        </section>
+        <aside class="panel">
+<figure class="section-photo">
+  <img src="assets/images/focused-study-ai.webp" alt="Notebook and laptop on a calm study desk." width="1200" height="800" loading="lazy" decoding="async">
+  <figcaption>Room to focus</figcaption>
+</figure>
+          <p class="eyebrow">
+            Make it manageable
+          </p>
+          <h2>
+            A simple study rhythm
+          </h2>
+          <ol class="step-list">
+            <li>
+              Write one specific, achievable task.
+            </li>
+            <li>
+              Give it your focus, one step at a time.
+            </li>
+            <li>
+              Mark it complete and keep going.
+            </li>
+          </ol>
+          <p class="note" id="storage-notice" role="status">
+            Tasks are saved in this browser on this device.
+          </p>
+        </aside>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>
+          Uduikhue Osamudiamen Joshua
+          &copy;
+          2026
+        </span>
+        <span>
+          Miva Open University
+        </span>
+        <a href="contact.html">
+          Let's connect
+          &nearr;
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
