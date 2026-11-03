@@ -193,3 +193,19 @@ body {
 }
 
 :root { --muted: #415970; }
+
+@media (max-width: 700px) {
+  /* On phones the portrait sits below the introduction. Follow that layout. */
+  .tech-hero {
+    background: radial-gradient(ellipse 100% 42% at 50% 72%, #bcd6ee, transparent 100%);
+  }
+  .portrait-hero-wrap {
+    width: 100%;
+    justify-self: center;
+  }
+  .js nav.is-open {
+    background: linear-gradient(145deg, #e3effa, #d8e7f5);
+    border-top: 1px solid var(--line);
+  }
+}
+
