@@ -180,3 +180,16 @@ body,.site-header { background: #d8e7f5; }
   .tech-hero .hero-copy,.tech-hero .hero-visual,.motion-enter { animation: none; }
   .card:hover,.button:hover { transform: none; }
 }
+
+/* A quiet blue gradient gives the page depth while keeping reading surfaces clear. */
+body {
+  background: linear-gradient(145deg, #e3effa 0%, #d8e7f5 42%, #c5daed 100%);
+}
+.tech-hero {
+  background: radial-gradient(ellipse at 85% 45%, #bcd6ee 0%, transparent 56%);
+}
+.callout,.home-bento .card:first-child {
+  background: linear-gradient(135deg, #e2eef9, #c0d7ec);
+}
+
+:root { --muted: #415970; }
