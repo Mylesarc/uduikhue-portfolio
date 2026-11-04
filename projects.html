@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <script src="js/theme.js?v=20261104"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Try Joshua’s study planner, local password explorer, and phishing awareness quiz.">
     <title>
@@ -27,11 +28,16 @@
     <script src="js/main.js?v=20261102b" defer>
     </script>
     <link rel="stylesheet" href="css/blue-theme.css?v=20261103a">
-    <script src="js/section-motion.js?v=20261102c" defer></script>
+    <script src="js/section-motion.js?v=20261104c" defer></script>
     <link rel="stylesheet" href="css/branding.css?v=20261104">
-  </head>
+  <link rel="stylesheet" href="css/design-system.css?v=20261104">
+  <link rel="stylesheet" href="css/portraits.css?v=20261104">
+<link rel="stylesheet" href="css/motion.css?v=20261104c">
+<link rel="stylesheet" href="css/interactions.css?v=20261104">
+<script src="js/interactions.js?v=20261104" defer></script>
+</head>
   <body class="page-projects">
-    <script src="js/branding.js?v=20261104"></script>
+    <script src="js/branding.js?v=20261104c"></script>
     <a class="skip" href="#main">
       Skip to content
     </a>
@@ -48,9 +54,14 @@
             </small>
           </span>
         </a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">
+        <div class="header-actions">
+        <button class="theme-toggle" type="button" hidden aria-label="Switch to dark mode" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20 14a8 8 0 0 1-10-10 8 8 0 1 0 10 10Z"/></svg><span>Dark mode</span>
+        </button>
+        <button class="menu-toggle"  type="button" aria-expanded="false" aria-controls="navigation">
           Menu
         </button>
+        </div>
         <nav id="navigation" aria-label="Main navigation">
           <a href="index.html">
             Home
@@ -89,8 +100,13 @@
       <p class="note">
         Try all three working demonstrations below. The security tools are educational exercises; cover images are illustrative.
       </p>
-      <section class="cards project-grid" aria-label="Working projects">
-        <article class="card">
+      <section class="project-story" aria-labelledby="project-story-title">
+  <div class="project-story-copy"><p class="eyebrow">Behind the projects</p><h2 id="project-story-title">Curiosity.<br>Put into practice.</h2><p>Exploring security, building useful tools, and learning how digital systems work. These projects are part of that journey.</p><a class="text-link" href="about.html">Meet the person behind the work &rarr;</a></div>
+  <figure class="project-story-photo"><img src="assets/images/portraits/creative-tech.webp" srcset="assets/images/portraits/creative-tech-320.webp 320w, assets/images/portraits/creative-tech.webp 627w" sizes="(max-width:700px) 90vw, 430px" width="627" height="627" alt="Joshua in a dark hoodie, lit by soft blue light." loading="lazy" decoding="async"><figcaption>Learning. Experimenting. Building.</figcaption></figure>
+</section>
+<div class="project-filter-bar" hidden><div class="project-filters" role="group" aria-label="Filter projects"><button type="button" data-filter="all" aria-pressed="true">All projects</button><button type="button" data-filter="security" aria-pressed="false">Security</button><button type="button" data-filter="productivity" aria-pressed="false">Productivity</button></div><p class="project-filter-status" role="status">Showing 3 projects</p></div>
+<section class="cards project-grid" aria-label="Working projects">
+        <article class="card" data-project-category="productivity"><span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="17" rx="3"/><path d="m8 12 2 2 5-5M9 2v4m6-4v4"/></svg></span>
           <img src="assets/images/focused-study-ai.webp" alt="Notebook and laptop scene illustrating academic planning." width="1200" height="800" loading="lazy" decoding="async">
           <div class="card-body">
             <span class="tag">
@@ -121,7 +137,7 @@
             </details>
           </div>
         </article>
-        <article class="card">
+        <article class="card" data-project-category="security"><span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6Z"/><path d="m8 12 3 3 5-6"/></svg></span>
           <img src="assets/images/cybersecurity-workspace-ai.webp" alt="Laptop and padlock scene illustrating password security." width="1200" height="800" loading="lazy" decoding="async">
           <div class="card-body">
             <span class="tag">
@@ -152,7 +168,7 @@
             </details>
           </div>
         </article>
-        <article class="card">
+        <article class="card" data-project-category="security"><span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 7 9 6 9-6"/></svg></span>
           <img src="assets/images/network-connections-ai.webp" alt="Network cables illustrating digital connections and security awareness." width="1200" height="800" loading="lazy" decoding="async">
           <div class="card-body">
             <span class="tag">

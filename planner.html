@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <script src="js/theme.js?v=20261104"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Organise coursework with a browser-based study planner. Add, complete, and save tasks on your device.">
     <title>
@@ -27,11 +28,16 @@
     <script src="js/planner.js" defer>
     </script>
     <link rel="stylesheet" href="css/blue-theme.css?v=20261103a">
-    <script src="js/section-motion.js?v=20261102c" defer></script>
+    <script src="js/section-motion.js?v=20261104c" defer></script>
     <link rel="stylesheet" href="css/branding.css?v=20261104">
-  </head>
+  <link rel="stylesheet" href="css/design-system.css?v=20261104">
+  <link rel="stylesheet" href="css/portraits.css?v=20261104">
+<link rel="stylesheet" href="css/motion.css?v=20261104c">
+<link rel="stylesheet" href="css/interactions.css?v=20261104">
+<script src="js/interactions.js?v=20261104" defer></script>
+</head>
   <body class="page-planner">
-    <script src="js/branding.js?v=20261104"></script>
+    <script src="js/branding.js?v=20261104c"></script>
     <a class="skip" href="#main">
       Skip to content
     </a>
@@ -48,9 +54,14 @@
             </small>
           </span>
         </a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">
+        <div class="header-actions">
+        <button class="theme-toggle" type="button" hidden aria-label="Switch to dark mode" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20 14a8 8 0 0 1-10-10 8 8 0 1 0 10 10Z"/></svg><span>Dark mode</span>
+        </button>
+        <button class="menu-toggle"  type="button" aria-expanded="false" aria-controls="navigation">
           Menu
         </button>
+        </div>
         <nav id="navigation" aria-label="Main navigation">
           <a href="index.html">
             Home
