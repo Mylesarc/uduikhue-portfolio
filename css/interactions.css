@@ -35,3 +35,17 @@
  .gallery-item img { transition: none; }
  .gallery-item:hover img { transform: none; }
 }
+
+/* The same button exposes expanded state to keyboard and screen-reader users. */
+.menu-toggle { width: 44px; height: 44px; padding: 10px; background: var(--white); }
+.hamburger { position: relative; display: block; width: 22px; height: 18px; }
+.hamburger>span { position: absolute; left: 0; width: 22px; height: 2px; border-radius: 2px; background: currentColor; transition: transform .2s ease, opacity .2s ease; }
+.hamburger>span:nth-child(1) { top: 1px; }
+.hamburger>span:nth-child(2) { top: 8px; }
+.hamburger>span:nth-child(3) { top: 15px; }
+.menu-toggle[aria-expanded='true'] .hamburger>span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.menu-toggle[aria-expanded='true'] .hamburger>span:nth-child(2) { opacity: 0; }
+.menu-toggle[aria-expanded='true'] .hamburger>span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+@media(prefers-reduced-motion:reduce) {
+ .hamburger>span { transition: none; }
+}
